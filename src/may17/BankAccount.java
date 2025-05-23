@@ -15,11 +15,12 @@ public class BankAccount {
         this.accountNumber = accountNumber;
         this.balance = balance;
     }
-/*
-    public void diposite(double balance){
+
+    public void deposit(double balance){
         System.out.println("Amount deposited is:");
+        this.balance = this.balance + balance;
     }
-*/
+
     public  void withDraw(double amount){
         if(balance>amount){
             balance = balance-amount;
@@ -35,3 +36,6 @@ public class BankAccount {
         System.out.println("Balance: "+balance);
     }
 }
+
+
+/// Home Assignment....!
