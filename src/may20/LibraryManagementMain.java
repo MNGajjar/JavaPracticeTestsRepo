@@ -12,6 +12,5 @@ public class LibraryManagementMain {
         lm2.printInfo();
         System.out.println("----------");
         LibraryManagement.showTotalIssued();
-
     }
 }

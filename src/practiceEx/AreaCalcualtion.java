@@ -15,15 +15,14 @@ public class AreaCalcualtion {
     }
 
     public double area(double radius){
+
         return pi*(radius*radius);
     }
 
     public static void main(String[] args) {
-        AreaCalcualtion areaRectangle = new AreaCalcualtion();
-        System.out.println("Area of rectangle is: "+areaRectangle.area(21, 2));
-        AreaCalcualtion areaSquare = new AreaCalcualtion();
-        System.out.println("Area of Square is: "+areaSquare.area(4));
-        AreaCalcualtion areaCircle = new AreaCalcualtion();
-        System.out.println("Area of Circle is: "+areaCircle.area(4.2));
+        AreaCalcualtion area = new AreaCalcualtion();
+        System.out.println("Circle area: "+area.area(21.1));
+        System.out.println("Rectangle area: "+area.area(2, 4));
+        System.out.println("Square area: "+area.area(4, 4));
     }
 }

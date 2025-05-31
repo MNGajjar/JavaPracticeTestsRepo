@@ -17,7 +17,8 @@ public class BankAccountMain {
         System.out.println("Account details after withdrawal amount..!");
         System.out.println("--------------------------------------");
         System.out.println("Maitree's Account");
-        maitreeAccount.withDraw(250);
+        maitreeAccount.withDraw(-2500);
+        maitreeAccount.withDraw(101);
         System.out.println("--------------------------------------");
         System.out.println("Someone's Account");
         someoneAccount.withDraw(100);
