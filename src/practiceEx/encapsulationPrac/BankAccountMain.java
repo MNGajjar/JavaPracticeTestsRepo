@@ -12,11 +12,12 @@ public class BankAccountMain {
         bankAccount.deposit(500);
         bankAccount.withdraw(725);
         System.out.println("------------------------------------------");
-        System.out.println(bankAccount.getAccountHolderName());
-        System.out.println(bankAccount.getAccountNumber());
-        System.out.println(bankAccount.getBalance());
+//        System.out.println(bankAccount.getAccountHolderName());
+//        System.out.println(bankAccount.getAccountNumber());
+//        System.out.println(bankAccount.getBalance());
         System.out.println("------------------------------------------");
         bankAccount1.display();;
         bankAccount1.deposit(50);
+        System.out.println(bankAccount1.getBalance());
     }
 }

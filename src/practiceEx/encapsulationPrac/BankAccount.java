@@ -1,5 +1,7 @@
 package practiceEx.encapsulationPrac;
 
+//Bank Account Management System
+
 public class BankAccount {
 
     private String accountNumber;
