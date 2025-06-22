@@ -38,6 +38,7 @@ public class MediaPlayerMain {
                 case 1:
                     mediaPlayer = new Netflix();
                     mediaPlayer.play();
+                    mediaPlayer.pause();
                     mediaPlayer.forward();
                     mediaPlayer.rewind();
                     mediaPlayer.speed();
