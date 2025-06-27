@@ -1,22 +1,32 @@
 package assignment3;
 
+/*
+Product Inventory Management:
+You are managing an inventory system for an online store.
+Create a Java program that uses an array to store the names of 5 products
+and another array to store their corresponding prices.
+Write a function that:
+• Displays all products with their prices.
+• Allows the user to search for a product by name and retrieve its price.
+*/
+
 public class ProductInventoryManagement {
 
-    public static void main(String[] args) {
-        String[] productName = {"iPhone", "airPods", "charger", "iWatch", "macBook"};
-        double[] productPrice = {1500.99,399.99,75.99,899.99,2399.99};
+        private static final String[] productName = {"iPhone", "airPods", "charger", "iWatch", "macBook"};
+        private static double[] productPrice = {1500.99,399.99,75.99,899.99,2399.99};
 
-
-
-        for(int i = 0; i<productName.length ; i++){
-                System.out.println(productName[i]);
+        public static void showDetails(){
+            System.out.println("Product List: ");
+            for (int i = 0; i< productName.length;i++){
+                System.out.println((i+1)+ "."+ productName[i] + " - $" + productPrice[i]);
             }
-        System.out.println("----------------------------");
-        for (int j = 0; j<productPrice.length;j++){
-            System.out.println(productPrice[j]);
         }
 
-
-
-    }
+        public static double searchProductByName(String name){
+            for (int i = 0; i<productName.length;i++){
+                if(productName[i].equalsIgnoreCase(name)){
+                    return productPrice[i];
+                }
+            }return -1;
+        }
 }

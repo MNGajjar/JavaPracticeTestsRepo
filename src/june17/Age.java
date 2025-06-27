@@ -15,7 +15,7 @@ public class Age {
         System.out.println("Last Line.!");
 
         if(myAge < 18){
-            throw new InvalidAgeForVotingException("You are not eligible to Drive.!");
+            throw new InvalidAgeException("You are not eligible to Drive.!");
         }else {
             System.out.println("You can get driving License.!");
         }
